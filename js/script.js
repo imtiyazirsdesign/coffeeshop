@@ -15,3 +15,16 @@ document.querySelectorAll(".nav-link").forEach(link => {
     navMenu.classList.remove("active");
   });
 });
+
+
+
+  // Trigger when section is visible
+  const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting && !started) {
+      startCount();
+      started = true;
+    }
+  }, { threshold: 0.5 });
+
+  observer.observe(document.getElementById('stats'));
+
