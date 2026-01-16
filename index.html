@@ -1,632 +1,900 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coffeeshop</title>
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffeeshop</title>
 
-    <!-- Icons -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet" />
 
-  <body>
-    <!-- NAVBAR -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light coffee-navbar"
-      style="height: 75px"
-    >
-      <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="./image/logo.png" alt="Coffee Logo" class="coffee-logo" />
-        </a>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
 
-        <!-- Toggle Button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#coffeeNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg coffee-navbar">
+  <div class="container">
 
-        <!-- Menu -->
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="coffeeNav"
-        >
-          <ul class="navbar-nav gap-4 text-center">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+    <!-- LOGO -->
+    <a class="navbar-brand" href="#">
+      <img src="./image/logo.png" alt="Coffee Logo" class="coffee-logo">
+    </a>
+
+    <!-- TOGGLER -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#coffeeNav"
+      aria-controls="coffeeNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- MENU -->
+    <div class="collapse navbar-collapse" id="coffeeNav">
+
+      <!-- NAV LINKS -->
+      <ul class="navbar-nav mx-auto text-center gap-lg-4 gap-2">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Our Lab</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Locations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Partners</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+
+        <!-- MOBILE CTA -->
+        <li class="nav-item d-lg-none mt-3">
+          <a href="#" class="btn order-btn w-100">Order Now</a>
+        </li>
+      </ul>
+
+      <!-- DESKTOP CTA -->
+      <div class="d-none d-lg-block">
+        <a href="#" class="btn order-btn">Order Now</a>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-row">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            “Where Coffee Meets <br />
+            Creativity”
+          </h1>
+
+          <p class="hero-subtitle">
+            Crafted brews, experimental flavours, and a space<br />
+            to think.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#" class="hero-btn">Explore Menu</a>
+            <a href="#" class="hero-btn-outline">Our Story</a>
+          </div>
+
+          <div class="hero-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAPER EDGE -->
+    <div class="hero-paper"></div>
+  </section>
+
+  <section class="coffee-features">
+    <div class="container">
+      <div class="row text-center g-5">
+        <!-- ITEM 1 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-box active">
+            <span class="feature-number">1</span>
+            <div class="feature-icon brown">
+              <i class="bi bi-cup-hot"></i>
+            </div>
+            <h5>Awesome aroma</h5>
+            <p>
+              The coffee is brewed by first roasting the green coffee beans
+            </p>
+          </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-box">
+            <span class="feature-number">2</span>
+            <div class="feature-icon beige">
+              <i class="bi bi-award"></i>
+            </div>
+            <h5>high quality</h5>
+            <p>
+              The coffee is brewed by first roasting the green coffee beans
+            </p>
+          </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-box">
+            <span class="feature-number">3</span>
+            <div class="feature-icon beige">
+              <i class="bi bi-droplet-half"></i>
+            </div>
+            <h5>pure grades</h5>
+            <p>
+              The coffee is brewed by first roasting the green coffee beans
+            </p>
+          </div>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-box">
+            <span class="feature-number">4</span>
+            <div class="feature-icon beige">
+              <i class="bi bi-cup-straw"></i>
+            </div>
+            <h5>proper roasting</h5>
+            <p>
+              The coffee is brewed by first roasting the green coffee beans
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-ui">
+    <div class="container">
+      <div class="row align-items-center position-relative">
+        <!-- LEFT -->
+        <div class="col-lg-6">
+          <span class="about-badge"> ☕ About Us </span>
+
+          <h2 class="about-heading">
+            Brewing Coffee with a<br />
+            Scientific Twist
+          </h2>
+
+          <p class="about-text">
+            Alessi Lab is a modern coffeehouse where creativity meets
+            craftsmanship. We experiment with flavors, techniques, and ideas
+            to create coffee experiences that inspire focus, conversation, and
+            innovation.
+          </p>
+
+          <ul class="about-points">
+            <li>
+              <span class="box"></span>
+              <div>
+                <strong>Experimental Brews</strong>
+                <p>Bold flavors crafted through careful experimentation.</p>
+              </div>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Our Lab</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Locations</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Partners</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+
+            <li>
+              <span class="box"></span>
+              <div>
+                <strong>Sustainable Bean</strong>
+                <p>Ethically sourced, responsibly roasted coffee.</p>
+              </div>
+            </li>
+
+            <li>
+              <span class="box"></span>
+              <div>
+                <strong>Creative Space</strong>
+                <p>Designed for thinkers, creators, and collaborators.</p>
+              </div>
+            </li>
           </ul>
+
+          <a href="#" class="about-btn">Learn More</a>
         </div>
 
-        <!-- CTA -->
-        <div class="d-none d-lg-block">
-          <a href="#" class="btn order-btn">Order Now</a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- HERO SECTION -->
-    <section class="hero-section">
-      <div class="hero-container">
-        <div class="hero-row">
-          <div class="hero-content">
-            <h1 class="hero-title">
-              “Where Coffee Meets <br />
-              Creativity”
-            </h1>
-
-            <p class="hero-subtitle">
-              Crafted brews, experimental flavours, and a space<br />
-              to think.
-            </p>
-
-            <div class="hero-buttons">
-              <a href="#" class="hero-btn">Explore Menu</a>
-              <a href="#" class="hero-btn-outline">Our Story</a>
-            </div>
-
-            <div class="hero-dots">
-              <span class="dot active"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
+        <!-- RIGHT IMAGE -->
+        <div class="col-lg-6">
+          <div class="about-image-wrap">
+            <img src="./image/about-img.png" alt="Coffee Lab" />
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- PAPER EDGE -->
-      <div class="hero-paper"></div>
-    </section>
+    <!-- DECOR -->
+    <img src="./image/about-vector.png" class="decor-beans" alt="" />
+    <img src="./image/about-vector2.png" class="decor-cup" alt="" />
+  </section>
+  <!-- The Coffee Herald -->
+  <section class="coffee-herald">
+    <div class="container">
+      <!-- HEADER -->
+      <div class="text-center herald-header">
+        <h2>The Coffee Herald</h2>
 
-    <section class="coffee-features">
-      <div class="container">
-        <div class="row text-center g-5">
-          <!-- ITEM 1 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-box active">
-              <span class="feature-number">1</span>
-              <div class="feature-icon brown">
-                <i class="bi bi-cup-hot"></i>
-              </div>
-              <h5>Awesome aroma</h5>
-              <p>
-                The coffee is brewed by first roasting the green coffee beans
-              </p>
-            </div>
-          </div>
-
-          <!-- ITEM 2 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-box">
-              <span class="feature-number">2</span>
-              <div class="feature-icon beige">
-                <i class="bi bi-award"></i>
-              </div>
-              <h5>high quality</h5>
-              <p>
-                The coffee is brewed by first roasting the green coffee beans
-              </p>
-            </div>
-          </div>
-
-          <!-- ITEM 3 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-box">
-              <span class="feature-number">3</span>
-              <div class="feature-icon beige">
-                <i class="bi bi-droplet-half"></i>
-              </div>
-              <h5>pure grades</h5>
-              <p>
-                The coffee is brewed by first roasting the green coffee beans
-              </p>
-            </div>
-          </div>
-
-          <!-- ITEM 4 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-box">
-              <span class="feature-number">4</span>
-              <div class="feature-icon beige">
-                <i class="bi bi-cup-straw"></i>
-              </div>
-              <h5>proper roasting</h5>
-              <p>
-                The coffee is brewed by first roasting the green coffee beans
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section class="about-ui">
-      <div class="container">
-        <div class="row align-items-center position-relative">
-          <!-- LEFT -->
-          <div class="col-lg-6">
-            <span class="about-badge"> ☕ About Us </span>
-
-            <h2 class="about-heading">
-              Brewing Coffee with a<br />
-              Scientific Twist
-            </h2>
-
-            <p class="about-text">
-              Alessi Lab is a modern coffeehouse where creativity meets
-              craftsmanship. We experiment with flavors, techniques, and ideas
-              to create coffee experiences that inspire focus, conversation, and
-              innovation.
-            </p>
-
-            <ul class="about-points">
-              <li>
-                <span class="box"></span>
-                <div>
-                  <strong>Experimental Brews</strong>
-                  <p>Bold flavors crafted through careful experimentation.</p>
-                </div>
-              </li>
-
-              <li>
-                <span class="box"></span>
-                <div>
-                  <strong>Sustainable Bean</strong>
-                  <p>Ethically sourced, responsibly roasted coffee.</p>
-                </div>
-              </li>
-
-              <li>
-                <span class="box"></span>
-                <div>
-                  <strong>Creative Space</strong>
-                  <p>Designed for thinkers, creators, and collaborators.</p>
-                </div>
-              </li>
-            </ul>
-
-            <a href="#" class="about-btn">Learn More</a>
-          </div>
-
-          <!-- RIGHT IMAGE -->
-          <div class="col-lg-6">
-            <div class="about-image-wrap">
-              <img src="./image/about-img.png" alt="Coffee Lab" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- DECOR -->
-      <img src="./image/about-vector.png" class="decor-beans" alt="" />
-      <img src="./image/about-vector2.png" class="decor-cup" alt="" />
-    </section>
-    <!-- The Coffee Herald -->
-    <section class="coffee-herald">
-      <div class="container">
-        <!-- HEADER -->
-        <div class="text-center herald-header">
-          <h2>The Coffee Herald</h2>
-
-          <div class="herald-icon">
-            <img src="./image/Coffeevector.png" alt="" />
-          </div>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore
-          </p>
+        <div class="herald-icon">
+          <img src="./image/Coffeevector.png" alt="" />
         </div>
 
-        <!-- CARDS -->
-        <div class="row g-4 mt-5">
-          <!-- CARD -->
-          <div class="col-lg-3 col-md-6">
-            <div class="herald-card">
-              <div class="card-img">
-                <img src="./image/blog1.jpg" alt="" />
-                <div class="card-overlay">
-                  <a href="#">View More</a>
-                </div>
-              </div>
-
-              <h5>French Press</h5>
-              <p>
-                Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel
-                augue. Curabitur ullamcorper ultricies nisi, nam eget dui. Etiam
-                rhoncus maecenas tempus
-              </p>
-            </div>
-          </div>
-
-          <!-- CARD -->
-          <div class="col-lg-3 col-md-6">
-            <div class="herald-card">
-              <div class="card-img">
-                <img src="./image/blog2.jpg" alt="" />
-                <div class="card-overlay">
-                  <a href="#">View More</a>
-                </div>
-              </div>
-
-              <h5>Turkish Ibrik</h5>
-              <p>
-                Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel
-                augue. Curabitur ullamcorper ultricies nisi, nam eget dui. Etiam
-                rhoncus maecenas tempus
-              </p>
-            </div>
-          </div>
-
-          <!-- CARD -->
-          <div class="col-lg-3 col-md-6">
-            <div class="herald-card">
-              <div class="card-img">
-                <img src="./image/blog3.jpg" alt="" />
-                <div class="card-overlay">
-                  <a href="#">View More</a>
-                </div>
-              </div>
-
-              <h5>Prep Techniques</h5>
-              <p>
-                Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel
-                augue. Curabitur ullamcorper ultricies nisi, nam eget dui. Etiam
-                rhoncus maecenas tempus
-              </p>
-            </div>
-          </div>
-
-          <!-- CARD -->
-          <div class="col-lg-3 col-md-6">
-            <div class="herald-card">
-              <div class="card-img">
-                <img src="./image/blog1.jpg" alt="" />
-                <div class="card-overlay">
-                  <a href="#">View More</a>
-                </div>
-              </div>
-
-              <h5>Prep Techniques</h5>
-              <p>
-                Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel
-                augue. Curabitur ullamcorper ultricies nisi, nam eget dui. Etiam
-                rhoncus maecenas tempus
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- popular-menu -->
-    <section class="popular-menu">
-      <div class="container text-center">
-        <span class="menu-badge">☕ Our Menu</span>
-        <h2 class="menu-title">Our Popular Menu</h2>
-
-        <div class="menu-glass">
-          <!-- LEFT -->
-          <div class="menu-col">
-            <div class="menu-item active">
-              <div class="item-left">
-                <img src="./image/menu/AmericanoRostedCoffee.png" alt="" />
-                <div>
-                  <h6>Brazilian Roasted Coffee</h6>
-                  <a href="#" class="order-now">Order Now</a>
-                </div>
-              </div>
-              <div class="menu-price">$10.99 <span>$13.99</span></div>
-            </div>
-
-            <div class="menu-item">
-              <div class="item-left">
-                <img src="./image/menu/AmericanoRostedCoffee.png" alt="" />
-                <div>
-                  <h6>Americano Cold Coffee</h6>
-                  <p>It is produced by grinding roasted coffee beans.</p>
-                </div>
-              </div>
-              <div class="menu-price">$10.99 <span>$13.99</span></div>
-            </div>
-
-            <div class="menu-item">
-              <div class="item-left">
-                <img src="./image/menu/ItalianRostedCoffee.png" alt="" />
-                <div>
-                  <h6>Americano Cold Coffee</h6>
-                  <p>It is produced by grinding roasted coffee beans.</p>
-                </div>
-              </div>
-              <div class="menu-price">$10.99 <span>$13.99</span></div>
-            </div>
-          </div>
-
-          <!-- CENTER CUP -->
-          <div class="menu-center">
-            <img src="./image/menu/menu-coffee.png" alt="" />
-          </div>
-
-          <!-- RIGHT -->
-          <div class="menu-col">
-            <div class="menu-item">
-              <div class="item-left">
-                <img src="./image/menu/AmericanoRostedCoffee.png" alt="" />
-                <div>
-                  <h6>Americano Roasted Coffee</h6>
-                  <p>It is produced by grinding roasted coffee beans.</p>
-                </div>
-              </div>
-              <div class="menu-price">$10.99 <span>$13.99</span></div>
-            </div>
-
-            <div class="menu-item">
-              <div class="item-left">
-                <img src="./image/menu/ItalianRostedCoffee.png" alt="" />
-                <div>
-                  <h6>Italian Roasted Coffee</h6>
-                  <p>It is produced by grinding roasted coffee beans.</p>
-                </div>
-              </div>
-              <div class="menu-price">$10.99 <span>$13.99</span></div>
-            </div>
-
-            <div class="menu-item">
-              <div class="item-left">
-                <img src="./image/menu/MericanoColdCoffee.png" alt="" />
-                <div>
-                  <h6>Americano Roasted Coffee</h6>
-                  <p>It is produced by grinding roasted coffee beans.</p>
-                </div>
-              </div>
-              <div class="menu-price">$10.99 <span>$13.99</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-4">
-          <a href="#" class="view-more">View More</a>
-        </div>
-      </div>
-    </section>
-    <!-- signature-section -->
-    <section class="signature-section">
-      <!-- DECOR -->
-      <img src="./image/Signaturecoffee.png" class="decor-left" alt="" />
-      <img src="./image/Signaturevector.png" class="decor-right" alt="" />
-
-      <div class="container text-center">
-        <h2 class="section-title">Signature Lab Creations</h2>
-
-        <!-- TABS -->
-        <div class="menu-tabs">
-          <button class="tab active">Coffee</button>
-          <button class="tab">Cold Brews</button>
-          <button class="tab">Matcha</button>
-          <button class="tab">Specials</button>
-        </div>
-
-        <!-- CARDS -->
-        <div class="row justify-content-center g-4 mt-5">
-          <!-- CARD -->
-          <div class="col-lg-4 col-md-6">
-            <div class="product-card dark">
-              <img src="./image/Signaturecub3.png" class="product-img" alt="" />
-              <h6>Italian Rosted Coffee</h6>
-              <p>
-                It is produced by grinding roasted coffee beans, then boiling
-                them.
-              </p>
-              <div class="price">$10.99 <span>$13.99</span></div>
-              <a href="#" class="order-btn">Order Now</a>
-            </div>
-          </div>
-
-          <!-- CARD -->
-          <div class="col-lg-4 col-md-6">
-            <div class="product-card light">
-              <img src="./image/Signaturecub2.png" class="product-img" alt="" />
-              <h6>Brazilian Rosted Coffee</h6>
-              <p>
-                It is produced by grinding roasted coffee beans, then boiling
-                them.
-              </p>
-              <div class="price">$10.99 <span>$13.99</span></div>
-              <a href="#" class="order-btn">Order Now</a>
-            </div>
-          </div>
-
-          <!-- CARD -->
-          <div class="col-lg-4 col-md-6">
-            <div class="product-card dark">
-              <img src="./image/Signaturecub3.png" class="product-img" alt="" />
-              <h6>Italian Rosted Coffee</h6>
-              <p>
-                It is produced by grinding roasted coffee beans, then boiling
-                them.
-              </p>
-              <div class="price">$10.99 <span>$13.99</span></div>
-              <a href="#" class="order-btn">Order Now</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- VIEW MORE -->
-        <div class="mt-5">
-          <a href="#" class="view-more-btn">View More</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- stats-section -->
-    <section class="stats-section">
-      <div class="stats-container">
-        <div class="stat-box">
-          <h2 class="stat-number">250</h2>
-          <h4 class="stat-title">Varieties of Coffee</h4>
-          <p class="stat-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit aenean
-          </p>
-        </div>
-
-        <div class="stat-box">
-          <h2 class="stat-number">123</h2>
-          <h4 class="stat-title">Hours of Testing</h4>
-          <p class="stat-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit aenean
-          </p>
-        </div>
-
-        <div class="stat-box">
-          <h2 class="stat-number">321</h2>
-          <h4 class="stat-title">Coffee Markets</h4>
-          <p class="stat-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit aenean
-          </p>
-        </div>
-
-        <div class="stat-box">
-          <h2 class="stat-number">220</h2>
-          <h4 class="stat-title">Coffee Brands</h4>
-          <p class="stat-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit aenean
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- testimonial-section -->
-    <section class="testimonial-section">
-      <div class="testimonial-container">
-        <!-- Heading -->
-        <h2 class="testimonial-title">What Client Says</h2>
-
-        <div class="testimonial-divider">
-          <span></span>
-          <img src="./image/paper-texture.jpg" alt="coffee" />
-          <span></span>
-        </div>
-
-        <p class="testimonial-subtitle">
-          Contrary to popular belief, Lorem Ipsum is not simply random text.
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore
         </p>
+      </div>
 
-        <!-- Slider Area -->
-        <div class="testimonial-slider">
-          <!-- Left Arrow -->
-          <button class="nav-arrow left">&#10094;</button>
-
-          <!-- Content -->
-          <div class="testimonial-content">
-            <div class="testimonial-img">
-              <img src="./image/Client1.jpg" alt="client" />
+      <!-- CARDS -->
+      <div class="row g-4 mt-5">
+        <!-- CARD -->
+        <div class="col-lg-3 col-md-6">
+          <div class="herald-card">
+            <div class="card-img">
+              <img src="./image/blog1.jpg" alt="" />
+              <div class="card-overlay">
+                <a href="#">View More</a>
+              </div>
             </div>
 
-            <p class="testimonial-text">
-              What can I say about coffee? Coffee is coffee. It tastes good,
-              wakes you up, and is less than $10 at most Starbucks. What else do
-              you need?
+            <h5>French Press</h5>
+            <p>
+              Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel
+              augue. Curabitur ullamcorper ultricies nisi, nam eget dui. Etiam
+              rhoncus maecenas tempus
             </p>
-
-            <h4 class="testimonial-name">Hester Perkins</h4>
           </div>
+        </div>
 
-          <!-- Right Arrow -->
-          <button class="nav-arrow right">&#10095;</button>
+        <!-- CARD -->
+        <div class="col-lg-3 col-md-6">
+          <div class="herald-card">
+            <div class="card-img">
+              <img src="./image/blog2.jpg" alt="" />
+              <div class="card-overlay">
+                <a href="#">View More</a>
+              </div>
+            </div>
+
+            <h5>Turkish Ibrik</h5>
+            <p>
+              Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel
+              augue. Curabitur ullamcorper ultricies nisi, nam eget dui. Etiam
+              rhoncus maecenas tempus
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="col-lg-3 col-md-6">
+          <div class="herald-card">
+            <div class="card-img">
+              <img src="./image/blog3.jpg" alt="" />
+              <div class="card-overlay">
+                <a href="#">View More</a>
+              </div>
+            </div>
+
+            <h5>Prep Techniques</h5>
+            <p>
+              Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel
+              augue. Curabitur ullamcorper ultricies nisi, nam eget dui. Etiam
+              rhoncus maecenas tempus
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="col-lg-3 col-md-6">
+          <div class="herald-card">
+            <div class="card-img">
+              <img src="./image/blog1.jpg" alt="" />
+              <div class="card-overlay">
+                <a href="#">View More</a>
+              </div>
+            </div>
+
+            <h5>Prep Techniques</h5>
+            <p>
+              Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel
+              augue. Curabitur ullamcorper ultricies nisi, nam eget dui. Etiam
+              rhoncus maecenas tempus
+            </p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  <!-- popular-menu -->
+  <section class="popular-menu">
+    <div class="container text-center">
+      <span class="menu-badge">☕ Our Menu</span>
+      <h2 class="menu-title">Our Popular Menu</h2>
 
-    <!-- FOOTER START -->
-    <footer class="coffee-footer">
+      <div class="menu-glass">
+        <!-- LEFT -->
+        <div class="menu-col">
+          <div class="menu-item active">
+            <div class="item-left">
+              <img src="./image/menu/AmericanoRostedCoffee.png" alt="" />
+              <div>
+                <h6>Brazilian Roasted Coffee</h6>
+                <a href="#" class="order-now">Order Now</a>
+              </div>
+            </div>
+            <div class="menu-price">$10.99 <span>$13.99</span></div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-left">
+              <img src="./image/menu/AmericanoRostedCoffee.png" alt="" />
+              <div>
+                <h6>Americano Cold Coffee</h6>
+                <p>It is produced by grinding roasted coffee beans.</p>
+              </div>
+            </div>
+            <div class="menu-price">$10.99 <span>$13.99</span></div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-left">
+              <img src="./image/menu/ItalianRostedCoffee.png" alt="" />
+              <div>
+                <h6>Americano Cold Coffee</h6>
+                <p>It is produced by grinding roasted coffee beans.</p>
+              </div>
+            </div>
+            <div class="menu-price">$10.99 <span>$13.99</span></div>
+          </div>
+        </div>
+
+        <!-- CENTER CUP -->
+        <div class="menu-center">
+          <img src="./image/menu/menu-coffee.png" alt="" />
+        </div>
+
+        <!-- RIGHT -->
+        <div class="menu-col">
+          <div class="menu-item">
+            <div class="item-left">
+              <img src="./image/menu/AmericanoRostedCoffee.png" alt="" />
+              <div>
+                <h6>Americano Roasted Coffee</h6>
+                <p>It is produced by grinding roasted coffee beans.</p>
+              </div>
+            </div>
+            <div class="menu-price">$10.99 <span>$13.99</span></div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-left">
+              <img src="./image/menu/ItalianRostedCoffee.png" alt="" />
+              <div>
+                <h6>Italian Roasted Coffee</h6>
+                <p>It is produced by grinding roasted coffee beans.</p>
+              </div>
+            </div>
+            <div class="menu-price">$10.99 <span>$13.99</span></div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-left">
+              <img src="./image/menu/MericanoColdCoffee.png" alt="" />
+              <div>
+                <h6>Americano Roasted Coffee</h6>
+                <p>It is produced by grinding roasted coffee beans.</p>
+              </div>
+            </div>
+            <div class="menu-price">$10.99 <span>$13.99</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <a href="#" class="view-more">View More</a>
+      </div>
+    </div>
+  </section>
+  <!-- signature-section -->
+  <section class="signature-section">
+    <!-- DECOR -->
+    <img src="./image/Signaturecoffee.png" class="decor-left" alt="" />
+    <img src="./image/Signaturevector.png" class="decor-right" alt="" />
+
+    <div class="container text-center">
+      <h2 class="section-title">Signature Lab Creations</h2>
+
+      <!-- TABS -->
+      <div class="menu-tabs">
+        <button class="tab active">Coffee</button>
+        <button class="tab">Cold Brews</button>
+        <button class="tab">Matcha</button>
+        <button class="tab">Specials</button>
+      </div>
+
+      <!-- CARDS -->
+      <div class="row justify-content-center g-4 mt-5">
+        <!-- CARD -->
+        <div class="col-lg-4 col-md-6">
+          <div class="product-card dark">
+            <img src="./image/Signaturecub3.png" class="product-img" alt="" />
+            <h6>Italian Rosted Coffee</h6>
+            <p>
+              It is produced by grinding roasted coffee beans, then boiling
+              them.
+            </p>
+            <div class="price">$10.99 <span>$13.99</span></div>
+            <a href="#" class="order-btn">Order Now</a>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="col-lg-4 col-md-6">
+          <div class="product-card light">
+            <img src="./image/Signaturecub2.png" class="product-img" alt="" />
+            <h6>Brazilian Rosted Coffee</h6>
+            <p>
+              It is produced by grinding roasted coffee beans, then boiling
+              them.
+            </p>
+            <div class="price">$10.99 <span>$13.99</span></div>
+            <a href="#" class="order-btn">Order Now</a>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="col-lg-4 col-md-6">
+          <div class="product-card dark">
+            <img src="./image/Signaturecub3.png" class="product-img" alt="" />
+            <h6>Italian Rosted Coffee</h6>
+            <p>
+              It is produced by grinding roasted coffee beans, then boiling
+              them.
+            </p>
+            <div class="price">$10.99 <span>$13.99</span></div>
+            <a href="#" class="order-btn">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIEW MORE -->
+      <div class="mt-5">
+        <a href="#" class="view-more-btn">View More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- stats-section -->
+  <section class="stats-section">
+    <div class="stats-container">
+      <div class="stat-box">
+        <h2 class="stat-number">250</h2>
+        <h4 class="stat-title">Varieties of Coffee</h4>
+        <p class="stat-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit aenean
+        </p>
+      </div>
+
+      <div class="stat-box">
+        <h2 class="stat-number">123</h2>
+        <h4 class="stat-title">Hours of Testing</h4>
+        <p class="stat-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit aenean
+        </p>
+      </div>
+
+      <div class="stat-box">
+        <h2 class="stat-number">321</h2>
+        <h4 class="stat-title">Coffee Markets</h4>
+        <p class="stat-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit aenean
+        </p>
+      </div>
+
+      <div class="stat-box">
+        <h2 class="stat-number">220</h2>
+        <h4 class="stat-title">Coffee Brands</h4>
+        <p class="stat-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit aenean
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- testimonial-section -->
+  <section class="testimonial-section">
+    <div class="testimonial-container">
+      <!-- Heading -->
+      <h2 class="testimonial-title">What Client Says</h2>
+
+      <div class="testimonial-divider">
+        <img src="./image/Coffeevector.png" alt="coffee" />
+      </div>
+
+      <p class="testimonial-subtitle">
+        Contrary to popular belief, Lorem Ipsum is not simply random text.
+      </p>
+
+      <!-- Slider Area -->
+      <div class="testimonial-slider">
+        <!-- Left Arrow -->
+        <button class="nav-arrow left">&#10094;</button>
+
+        <!-- Content -->
+        <div class="testimonial-content">
+          <div class="testimonial-img">
+            <img src="./image/Client1.jpg" alt="client" />
+          </div>
+
+          <p class="testimonial-text">
+            What can I say about coffee? Coffee is coffee. It tastes good,
+            wakes you up, and is less than $10 at most Starbucks. What else do
+            you need?
+          </p>
+
+          <h4 class="testimonial-name">Hester Perkins</h4>
+        </div>
+
+        <!-- Right Arrow -->
+        <button class="nav-arrow right">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section class="sweet-gallery py-5 position-relative overflow-hidden">
+
+    <!-- Top Left Corner Image -->
+    <img src="./image/Gallery/galleryvectorleft.png" class="corner-img corner-top-left" alt="">
+
+    <!-- Bottom Right Corner Image -->
+    <img src="./image/Gallery/galleryvectorright.png" class="corner-img corner-bottom-right" alt="">
+
+    <div class="container position-relative">
+
+      <!-- Section Heading -->
+      <div class="text-center mb-5">
+        <h2 class="gallery-title">Our Sweet Gallery</h2>
+
+        <div class="gallery-divider my-3">
+          <img src="./image/Coffeevector.png" alt="">
+        </div>
+
+        <p class="gallery-subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore
+        </p>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="row g-4">
+
+        <!-- CARD 1 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="gallery-card">
+            <img src="./image/Gallery/Gallery1.jpg" alt="">
+            <div class="overlay-content">
+              <h5>Perfect Cup</h5>
+              <p>Cup of Coffee / Filtered</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="gallery-card">
+            <img src="./image/Gallery/Gallery2.jpg" alt="">
+            <div class="overlay-content">
+              <h5>Fresh Brew</h5>
+              <p>Barista Style</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="gallery-card">
+            <img src="./image/Gallery/Gallery3.png" alt="">
+            <div class="overlay-content">
+              <h5>Latte Art</h5>
+              <p>Milk & Coffee</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="gallery-card">
+            <img src="./image/Gallery/Gallery4.png" alt="">
+            <div class="overlay-content">
+              <h5>Roasted Beans</h5>
+              <p>Premium Quality</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="gallery-card">
+            <img src="./image/Gallery/Gallery5.png" alt="">
+            <div class="overlay-content">
+              <h5>Coffee Bar</h5>
+              <p>Modern Setup</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="gallery-card">
+            <img src="./image/Gallery/Gallery6.jpg" alt="">
+            <div class="overlay-content">
+              <h5>Friends Time</h5>
+              <p>Enjoy Together</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="gallery-card">
+            <img src="./image/Gallery/Gallery7.jpg" alt="">
+            <div class="overlay-content">
+              <h5>Espresso Shot</h5>
+              <p>Strong Taste</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="gallery-card">
+            <img src="./image/Gallery/Gallery8.jpg" alt="">
+            <div class="overlay-content">
+              <h5>Serving Coffee</h5>
+              <p>Freshly Made</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED BLOG SECTION -->
+  <section class="featured-blog py-5 position-relative">
+    <div class="container">
+
+      <!-- Heading -->
+      <div class="text-center mb-5">
+        <h2 class="blog-title">Featured Blog</h2>
+
+        <div class="blog-divider my-3">
+
+          <img src="./image/Coffeevector.png" alt="">
+
+        </div>
+
+        <p class="blog-subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore
+        </p>
+      </div>
+
+      <!-- Blog Cards -->
+      <div class="row g-4">
+
+        <!-- Blog Card 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-card">
+            <img src="./image/blog/blog1.png" alt="">
+            <div class="blog-content">
+              <h5>Watch misni sdedn nises</h5>
+
+              <div class="blog-meta">
+                <span>12 November, 2024</span>
+                <span>\</span>
+                <span>1 comment</span>
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore...
+              </p>
+
+              <a href="#" class="btn blog-btn active">Explorer More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-card">
+            <img src="./image/blog/blog2.png" alt="">
+            <div class="blog-content">
+              <h5>Watch misni sdedn nises</h5>
+
+              <div class="blog-meta">
+                <span>12 November, 2024</span>
+                <span>\</span>
+                <span>1 comment</span>
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore...
+              </p>
+
+              <a href="#" class="btn blog-btn">Explorer More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-card">
+            <img src="./image/blog/blog3.png" alt="">
+            <div class="blog-content">
+              <h5>Watch misni sdedn nises</h5>
+
+              <div class="blog-meta">
+                <span>12 November, 2024</span>
+                <span>\</span>
+                <span>1 comment</span>
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore...
+              </p>
+
+              <a href="#" class="btn blog-btn">Explorer More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER SECTION -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-wrapper">
+
+        <div class="row align-items-center g-4">
+
+          <!-- LEFT IMAGE -->
+          <div class="col-lg-4">
+            <div class="newsletter-img">
+              <img src="./image/Newsletter-img.png" alt="">
+            </div>
+          </div>
+
+          <!-- RIGHT CONTENT -->
+          <div class="col-lg-8">
+            <div class="newsletter-content">
+
+              <span class="newsletter-label">
+                ☕ Newsletter Signup
+              </span>
+
+              <h3>“Stay in the Loop”</h3>
+
+              <div class="newsletter-form">
+                <input type="email" placeholder="Email">
+                <button>Subscribe</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="coffee-footer">
+
+    <!-- Main Footer -->
+    <div class="footer-main">
       <div class="container">
         <div class="row gy-4">
-          <!-- Brand Info -->
-          <div class="col-lg-4 col-md-6">
-            <h4 class="footer-logo">Coffee Lab</h4>
-            <p class="footer-text">
-              Where coffee meets creativity and science. Crafted brews,
-              experimental flavours, and a space to think.
-            </p>
+
+          <!-- Logo & Text -->
+          <div class="col-lg-4">
+            <div class="footer-brand">
+              <img src="./image/logo.png" alt="">
+              <p>
+                A modern coffeehouse where creativity and craft come together.
+              </p>
+            </div>
           </div>
 
           <!-- Quick Links -->
-          <div class="col-lg-2 col-md-6">
-            <h5 class="footer-title">Quick Links</h5>
-            <ul class="footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">Our Lab</a></li>
-              <li><a href="#">Locations</a></li>
-              <li><a href="#">Contact</a></li>
+          <div class="col-lg-2">
+            <h5>Quick Links</h5>
+            <ul>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Gallery</li>
+              <li>Stories / Impact</li>
+              <li>Our Lab</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+
+          <!-- Our Menu -->
+          <div class="col-lg-3">
+            <h5>Our Menu</h5>
+            <ul>
+              <li>Americano Rosted Coffee</li>
+              <li>Italian Rosted Coffee</li>
+              <li>Brazilan Rosted Coffee</li>
+              <li>Mericano Cold Coffee</li>
+              <li>Mericano Cold Coffee</li>
             </ul>
           </div>
 
           <!-- Contact -->
-          <div class="col-lg-3 col-md-6">
-            <h5 class="footer-title">Contact Us</h5>
-            <ul class="footer-contact">
-              <li>📍 Mumbai, India</li>
-              <li>📞 +91 98765 43210</li>
-              <li>✉️ info@coffeelab.com</li>
+          <div class="col-lg-3">
+            <h5>Contact Information</h5>
+            <ul class="contact-list">
+              <li><i class="bi bi-geo-alt-fill"></i> Malibu,USA</li>
+              <li><i class="bi bi-envelope-fill"></i> malibu@gmail.com</li>
+              <li><i class="bi bi-telephone-fill"></i> +123456789</li>
             </ul>
           </div>
 
-          <!-- Newsletter -->
-          <div class="col-lg-3 col-md-6">
-            <h5 class="footer-title">Stay Updated</h5>
-            <p class="footer-text">Get the latest brews & lab creations.</p>
-            <form class="footer-form">
-              <input
-                type="email"
-                class="form-control"
-                placeholder="Your email"
-              />
-              <button type="submit" class="btn footer-btn">Subscribe</button>
-            </form>
-          </div>
-        </div>
-
-        <!-- Bottom Bar -->
-        <div class="footer-bottom text-center mt-4">
-          <p>© 2026 Coffee Lab. All Rights Reserved.</p>
         </div>
       </div>
-    </footer>
-    <!-- FOOTER END -->
+    </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      © 2026 Alessis Lab. All rights reserved.
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
