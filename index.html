@@ -74,38 +74,73 @@
       </div>
     </div>
   </nav>
-  <!-- HERO SECTION -->
-  <section class="hero-section">
-    <div class="hero-container">
-      <div class="hero-row">
-        <div class="hero-content">
-          <h1 class="hero-title">
-            “Where Coffee Meets <br />
-            Creativity”
-          </h1>
+<!-- HERO SECTION -->
+<section class="hero-section">
+  <div class="hero-container">
+    <div class="hero-row">
 
+      <!-- SLIDES -->
+      <div class="hero-slides">
+
+        <!-- SLIDE 1 -->
+        <div class="hero-content active" data-bg="../image/hero-bg.png">
+          <h1 class="hero-title">
+            “Where Coffee Meets <br /> Creativity”
+          </h1>
           <p class="hero-subtitle">
             Crafted brews, experimental flavours, and a space<br />
             to think.
           </p>
-
           <div class="hero-buttons">
             <a href="#" class="hero-btn">Explore Menu</a>
             <a href="#" class="hero-btn-outline">Our Story</a>
           </div>
+        </div>
 
-          <div class="hero-dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+        <!-- SLIDE 2 -->
+        <div class="hero-content" data-bg="../image/hero-bg-2.png">
+          <h1 class="hero-title">
+            Fresh Beans <br /> Bold Taste
+          </h1>
+          <p class="hero-subtitle">
+            Ethically sourced, perfectly roasted coffee.
+          </p>
+          <div class="hero-buttons">
+            <a href="#" class="hero-btn">View Coffee</a>
+            <a href="#" class="hero-btn-outline">Learn More</a>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- PAPER EDGE -->
-    <div class="hero-paper"></div>
-  </section>
+        <!-- SLIDE 3 -->
+        <div class="hero-content" data-bg="../image/hero-bg-3.png">
+          <h1 class="hero-title">
+            Your Daily <br /> Coffee Ritual
+          </h1>
+          <p class="hero-subtitle">
+            Crafted with passion for true coffee lovers.
+          </p>
+          <div class="hero-buttons">
+            <a href="#" class="hero-btn">Order Now</a>
+            <a href="#" class="hero-btn-outline">Contact Us</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- DOTS -->
+      <div class="hero-dots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PAPER EDGE -->
+  <div class="hero-paper"></div>
+</section>
+
   <!-- coffee-features -->
   <section class="coffee-features">
     <div class="container">
@@ -1040,7 +1075,40 @@
         });
       });
     });
+    // heroSlides
+const heroSection = document.querySelector(".hero-section");
+  const heroSlides = document.querySelectorAll(".hero-content");
+  const heroDots = document.querySelectorAll(".hero-dots .dot");
 
+  let heroIndex = 0;
+
+  function showHeroSlide(index) {
+    heroSlides.forEach(slide => slide.classList.remove("active"));
+    heroDots.forEach(dot => dot.classList.remove("active"));
+
+    const activeSlide = heroSlides[index];
+    activeSlide.classList.add("active");
+    heroDots[index].classList.add("active");
+
+    const bg = activeSlide.getAttribute("data-bg");
+    heroSection.style.backgroundImage = `url('${bg}')`;
+
+    heroIndex = index;
+  }
+
+  heroDots.forEach(dot => {
+    dot.addEventListener("click", () => {
+      showHeroSlide(parseInt(dot.dataset.slide));
+    });
+  });
+
+  setInterval(() => {
+    heroIndex = (heroIndex + 1) % heroSlides.length;
+    showHeroSlide(heroIndex);
+  }, 5000);
+
+  // Initial load
+  showHeroSlide(heroIndex);
     
   </script>
 
