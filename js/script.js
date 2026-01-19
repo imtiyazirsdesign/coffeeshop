@@ -28,3 +28,5 @@ document.querySelectorAll(".nav-link").forEach(link => {
 
   observer.observe(document.getElementById('stats'));
 
+
+

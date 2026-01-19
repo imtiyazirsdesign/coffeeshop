@@ -1,0 +1,39 @@
+/* MENU HERO */
+.menu-hero {
+  min-height: 45vh; /* Between 40–50vh */
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("images/menu-hero-bg.jpg") center/cover no-repeat;
+}
+
+.menu-hero-badge {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+}
+
+.menu-hero-title {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.menu-hero-subtitle {
+  font-size: 1.05rem;
+  max-width: 520px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* Mobile spacing tweak */
+@media (max-width: 576px) {
+  .menu-hero {
+    min-height: 40vh;
+  }
+}
