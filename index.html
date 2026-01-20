@@ -21,59 +21,60 @@
 </head>
 
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg coffee-navbar">
-    <div class="container">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg coffee-navbar">
+  <div class="container">
 
-      <!-- LOGO -->
-      <a class="navbar-brand" href="#">
-        <img src="./image/logo.png" alt="Coffee Logo" class="coffee-logo">
-      </a>
+    <!-- LOGO -->
+    <a class="navbar-brand" href="./index.html">
+      <img src="./image/logo.png" alt="Coffee Logo" class="coffee-logo">
+    </a>
 
-      <!-- TOGGLER -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#coffeeNav"
-        aria-controls="coffeeNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- TOGGLER -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#coffeeNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <!-- MENU -->
-      <div class="collapse navbar-collapse" id="coffeeNav">
+    <!-- MENU -->
+    <div class="collapse navbar-collapse" id="coffeeNav">
 
-        <!-- NAV LINKS -->
-        <ul class="navbar-nav mx-auto text-center gap-lg-4 gap-2">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Our Lab</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Locations</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Partners</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
+      <!-- NAV LINKS -->
+      <ul class="navbar-nav mx-auto text-center gap-lg-4 gap-2">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="our-lab.html">Our Lab</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="locations.html">Locations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="partners.html">Partners</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
 
-          <!-- MOBILE CTA -->
-          <li class="nav-item d-lg-none mt-3">
-            <a href="#" class="btn order-btn w-100">Order Now</a>
-          </li>
-        </ul>
+        <!-- MOBILE CTA -->
+        <li class="nav-item d-lg-none mt-3">
+          <a href="#" class="btn order-btn w-100">Order Now</a>
+        </li>
+      </ul>
 
-        <!-- DESKTOP CTA -->
-        <div class="d-none d-lg-block">
-          <a href="#" class="btn order-btn">Order Now</a>
-        </div>
-
+      <!-- DESKTOP CTA -->
+      <div class="d-none d-lg-block">
+        <a href="#" class="btn order-btn">Order Now</a>
       </div>
+
     </div>
-  </nav>
+  </div>
+</nav>
+
   <!-- HERO SECTION -->
   <section class="hero-section">
     <div class="hero-container">
@@ -256,6 +257,66 @@
     <img src="./image/about-vector.png" class="decor-beans" alt="" />
     <img src="./image/about-vector2.png" class="decor-cup" alt="" />
   </section>
+
+  <!-- favorites -->
+<section class="favorites">
+  <div class="container">
+
+    <h2 class="section-title">Alessis's Favorites</h2>
+
+    <div class="product-grid">
+
+      <!-- CARD -->
+      <div class="product-card">
+        <span class="badge">Best Seller</span>
+
+        <div class="product-image">
+          <img src="image/product-1.png" alt="Protein Coffee">
+        </div>
+
+        <h3>Sweet & Creamy Protein Coffee</h3>
+        <p class="price">$19.00</p>
+
+        <a href="#" class="btn-shop">Shop Now</a>
+      </div>
+
+      <!-- CARD -->
+      <div class="product-card">
+        <span class="badge">Best Seller</span>
+
+        <div class="product-image">
+          <img src="image/product-2.png" alt="Mushroom Coffee">
+        </div>
+
+        <h3>
+          Organic PERFORM Functional Mushroom Coffee – Medium Roast Ground
+        </h3>
+        <p class="price">$20.00</p>
+
+        <a href="#" class="btn-shop">Shop Now</a>
+      </div>
+
+      <!-- CARD -->
+      <div class="product-card">
+        <span class="badge">Best Seller</span>
+
+        <div class="product-image">
+          <img src="image/product-3.png" alt="Creamer">
+        </div>
+
+        <h3>
+          Sweet & Creamy with Adaptogens Superfood Creamer®
+        </h3>
+        <p class="price">$27.00</p>
+
+        <a href="#" class="btn-shop">Shop Now</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
   <!-- The Coffee Herald -->
   <section class="coffee-herald">
     <div class="container">
@@ -886,90 +947,157 @@
       </div>
     </div>
   </section>
-<!-- FAQ SECTION -->
-<section class="al-faq-section">
-  <div class="faq-shape shape-left"></div>
-  <div class="faq-shape shape-right"></div>
 
+  <!-- benefits-section -->
+   <section class="benefits-section">
   <div class="container">
-    <div class="row align-items-center g-5">
 
-      <!-- LEFT : FAQ -->
-      <div class="col-lg-6">
-        <div class="al-faq-header">
-          <span class="faq-badge">FAQs</span>
-          <h2>Frequently Asked Questions</h2>
-          <p>Everything you need to know about our coffee, café, and ordering process.</p>
-        </div>
+    <h2 class="benefits-title">
+      Benefits you shouldn’t have to live without
+    </h2>
 
-        <div class="accordion al-faq-accordion" id="faqAccordion">
+    <div class="benefits-grid">
 
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                What coffee beans do you use?
-              </button>
-            </h2>
-            <div id="faq1" class="accordion-collapse collapse show">
-              <div class="accordion-body">
-                We use premium, ethically sourced beans from Brazil, Italy, and South India, roasted in small batches.
-              </div>
-            </div>
-          </div>
+      <!-- CARD -->
+      <div class="benefit-card">
+        <img src="image/benefit-energy.jpg" alt="Sustained Energy">
 
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
-                Do you offer takeaway and online orders?
-              </button>
-            </h2>
-            <div id="faq2" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                Yes, you can order online, call us directly, or visit our café for takeaway and dine-in.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
-                Do you have vegan or dairy-free options?
-              </button>
-            </h2>
-            <div id="faq3" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                We offer oat, soy, and almond milk options for most beverages.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">
-                Where is your café located?
-              </button>
-            </h2>
-            <div id="faq4" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                Our café is located in the heart of the city. Visit our Locations page for directions.
-              </div>
-            </div>
-          </div>
-
+        <div class="benefit-content">
+          <h3>Sustained Energy</h3>
+          <p>
+            Naturally occurring MCTs help provide clean, long-lasting energy
+            without crashes or jitters.
+          </p>
         </div>
       </div>
 
-      <!-- RIGHT : IMAGE -->
-      <div class="col-lg-6">
-        <div class="faq-image-wrapper">
-          <img src="./image/coffee-faq.png" alt="Coffee Shop">
-          <div class="faq-image-overlay"></div>
+      <!-- CARD -->
+      <div class="benefit-card">
+        <img src="image/benefit-immune.jpg" alt="Immune Support">
+
+        <div class="benefit-content">
+          <h3>Immune Support</h3>
+          <p>
+            Maitake and Chaga mushrooms are rich in beta-glucans that help
+            strengthen immune response.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD -->
+      <div class="benefit-card">
+        <img src="image/benefit-bio.jpg" alt="Bioavailability">
+
+        <div class="benefit-content">
+          <h3>Bioavailability</h3>
+          <p>
+            We use real, whole ingredients so your body can easily absorb and
+            utilize nutrients.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD -->
+      <div class="benefit-card">
+        <img src="image/benefit-balance.jpg" alt="Balance">
+
+        <div class="benefit-content">
+          <h3>Balance</h3>
+          <p>
+            Adaptogens help the body manage stress and support mental clarity
+            and focus.
+          </p>
         </div>
       </div>
 
     </div>
   </div>
 </section>
+
+  <!-- FAQ SECTION -->
+  <section class="al-faq-section">
+    <div class="faq-shape shape-left"></div>
+    <div class="faq-shape shape-right"></div>
+
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <!-- LEFT : FAQ -->
+        <div class="col-lg-6">
+          <div class="al-faq-header">
+            <span class="faq-badge">FAQs</span>
+            <h2>Frequently Asked Questions</h2>
+            <p>Everything you need to know about our coffee, café, and ordering process.</p>
+          </div>
+
+          <div class="accordion al-faq-accordion" id="faqAccordion">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  What coffee beans do you use?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  We use premium, ethically sourced beans from Brazil, Italy, and South India, roasted in small batches.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  Do you offer takeaway and online orders?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Yes, you can order online, call us directly, or visit our café for takeaway and dine-in.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  Do you have vegan or dairy-free options?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  We offer oat, soy, and almond milk options for most beverages.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">
+                  Where is your café located?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Our café is located in the heart of the city. Visit our Locations page for directions.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- RIGHT : IMAGE -->
+        <div class="col-lg-6">
+          <div class="faq-image-wrapper">
+            <img src="./image/coffee-faq.png" alt="Coffee Shop">
+            <div class="faq-image-overlay"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 
   <!-- NEWSLETTER SECTION -->

@@ -521,6 +521,118 @@ body {
   }
 }
 
+/* ===== SECTION ===== */
+.favorites {
+  padding: 80px 0;
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #7a3e0e;
+  margin-bottom: 50px;
+}
+
+/* ===== GRID ===== */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* ===== CARD ===== */
+.product-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px 24px 34px;
+  text-align: center;
+  border: 1px solid #eee;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-14px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== BADGE ===== */
+.badge {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: #2c6f8e;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+/* ===== IMAGE ===== */
+.product-image img {
+  height: 220px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 25px;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.08);
+}
+
+/* ===== TEXT ===== */
+.product-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0a2540;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0a2540;
+  margin-bottom: 24px;
+}
+
+/* ===== BUTTON (PUSH EFFECT) ===== */
+.btn-shop {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 0;
+  background: #e11d48;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.35s ease;
+}
+
+.product-card:hover .btn-shop {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(225, 29, 72, 0.45);
+}
+
+.btn-shop:hover {
+  background: #be123c;
+}
+
+
+
 /* coffee-herald */
 .coffee-herald {
   background: #f4efe7 url("../image/paper-texture.jpg");
@@ -1586,6 +1698,105 @@ body {
 .blog-btn:hover {
   background: #7a4a23;
   color: #fff;
+}
+
+/* ===== BENEFITS SECTION ===== */
+.benefits-section {
+  padding: 90px 0;
+  background: #f7f2ec;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.benefits-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #3b2a1a;
+  margin-bottom: 60px;
+}
+
+/* ===== GRID ===== */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* ===== CARD ===== */
+.benefit-card {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #000;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.benefit-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* DARK GRADIENT OVERLAY */
+.benefit-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.75)
+  );
+  transition: opacity 0.4s ease;
+}
+
+/* ===== CONTENT ===== */
+.benefit-content {
+  position: absolute;
+  bottom: 0;
+  padding: 26px;
+  color: #fff;
+  z-index: 2;
+  transform: translateY(35px);
+  transition: all 0.4s ease;
+}
+
+.benefit-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.benefit-content p {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* ===== HOVER EFFECT ===== */
+.benefit-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+}
+
+.benefit-card:hover img {
+  transform: scale(1.1);
+}
+
+.benefit-card:hover .benefit-content {
+  transform: translateY(0);
+}
+
+.benefit-card:hover .benefit-content p {
+  opacity: 1;
 }
 
 /* ===============================
