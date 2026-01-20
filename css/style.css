@@ -1588,6 +1588,144 @@ body {
   color: #fff;
 }
 
+/* ===============================
+   FAQ SECTION (LEFT FAQ | IMAGE)
+================================ */
+.al-faq-section {
+  position: relative;
+  padding: 100px 0;
+  background: linear-gradient(135deg, #15110d, #2b1a12);
+  color: #f5f2ee;
+  overflow: hidden;
+}
+
+/* SHAPES */
+.faq-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.25;
+  z-index: 0;
+}
+
+.shape-left {
+  width: 280px;
+  height: 280px;
+  background: #c89b6c;
+  top: -120px;
+  left: -120px;
+}
+
+.shape-right {
+  width: 260px;
+  height: 260px;
+  background: #000;
+  bottom: -120px;
+  right: -120px;
+}
+
+/* HEADER */
+.al-faq-header {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+.faq-badge {
+  display: inline-block;
+  padding: 6px 18px;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  background: rgba(200, 155, 108, 0.2);
+  margin-bottom: 12px;
+}
+
+.al-faq-header h2 {
+  font-size: clamp(2rem, 3.2vw, 2.6rem);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.al-faq-header p {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+/* ACCORDION */
+.al-faq-accordion {
+  position: relative;
+  z-index: 1;
+}
+
+.al-faq-accordion .accordion-item {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  border-radius: 16px;
+  margin-bottom: 14px;
+}
+
+.al-faq-accordion .accordion-button {
+  background: transparent;
+  color: #f5f2ee;
+  font-weight: 600;
+  padding: 18px 22px;
+  box-shadow: none;
+}
+
+.al-faq-accordion .accordion-button:not(.collapsed) {
+  color: #c89b6c;
+}
+
+.al-faq-accordion .accordion-button::after {
+  filter: invert(1);
+}
+
+.al-faq-accordion .accordion-body {
+  padding: 0 22px 20px;
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+/* IMAGE */
+.faq-image-wrapper {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+}
+
+.faq-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.faq-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(21, 17, 13, 0.85),
+    rgba(21, 17, 13, 0.2)
+  );
+}
+
+/* MOBILE */
+@media (max-width: 992px) {
+  .faq-image-wrapper {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .al-faq-section {
+    padding: 80px 0;
+  }
+}
+
+
 /* ================= NEWSLETTER ================= */
 
 .newsletter-section {
