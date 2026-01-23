@@ -5,16 +5,31 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
 
-/* ACTIVE LINK SWITCH */
-document.querySelectorAll(".nav-link").forEach(link => {
-  link.addEventListener("click", () => {
-    document.querySelectorAll(".nav-link").forEach(l => l.classList.remove("active"));
-    link.classList.add("active");
+/* ===== STICKY NAVBAR SHADOW ===== */
+const navbar = document.querySelector(".coffee-navbar");
 
-    // Close menu on mobile
-    navMenu.classList.remove("active");
-  });
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 20) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
 });
+
+
+/* ===== ACTIVE MENU BASED ON PAGE ===== */
+const currentPage = window.location.pathname.split("/").pop();
+
+document.querySelectorAll(".coffee-navbar .nav-link").forEach(link => {
+  const linkPage = link.getAttribute("href");
+
+  if (linkPage === currentPage || (currentPage === "" && linkPage === "index.html")) {
+    link.classList.add("active");
+  } else {
+    link.classList.remove("active");
+  }
+});
+
 
 
 
