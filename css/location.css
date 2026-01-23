@@ -1,0 +1,53 @@
+/* ===== LOCATION HERO ===== */
+.location-hero {
+  min-height: 70vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('../images/location-hero.jpg'); /* change image */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.location-badge {
+  background: rgba(255,255,255,0.15);
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.location-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 20px 0 15px;
+}
+
+.location-title span {
+  color: #c7a17a; /* coffee accent */
+}
+
+.location-subtitle {
+  font-size: 18px;
+  max-width: 650px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.location-cta .btn {
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .location-title {
+    font-size: 34px;
+  }
+  .location-subtitle {
+    font-size: 16px;
+  }
+}
