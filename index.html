@@ -18,6 +18,8 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./css/style.css" />
+  <!-- Add Animation on scroll -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -84,14 +86,14 @@
 
           <!-- SLIDE 1 -->
           <div class="hero-content active" data-bg="../image/hero-bg.png">
-            <h1 class="hero-title">
+            <h1 class="hero-title" >
               “Where Coffee Meets <br /> Creativity”
             </h1>
-            <p class="hero-subtitle">
+            <p class="hero-subtitle" >
               Crafted brews, experimental flavours, and a space<br />
               to think.
             </p>
-            <div class="hero-buttons">
+            <div class="hero-buttons" >
               <a href="#" class="hero-btn">Explore Menu</a>
               <a href="#" class="hero-btn-outline">Our Story</a>
             </div>
@@ -99,13 +101,13 @@
 
           <!-- SLIDE 2 -->
           <div class="hero-content" data-bg="../image/hero-bg-2.png">
-            <h1 class="hero-title">
+            <h1 class="hero-title" >
               Fresh Beans <br /> Bold Taste
             </h1>
-            <p class="hero-subtitle">
+            <p class="hero-subtitle" data-aos="fade-left">
               Ethically sourced, perfectly roasted coffee.
             </p>
-            <div class="hero-buttons">
+            <div class="hero-buttons" >
               <a href="#" class="hero-btn">View Coffee</a>
               <a href="#" class="hero-btn-outline">Learn More</a>
             </div>
@@ -113,13 +115,13 @@
 
           <!-- SLIDE 3 -->
           <div class="hero-content" data-bg="../image/hero-bg-3.png">
-            <h1 class="hero-title">
+            <h1 class="hero-title" >
               Your Daily <br /> Coffee Ritual
             </h1>
-            <p class="hero-subtitle">
+            <p class="hero-subtitle" >
               Crafted with passion for true coffee lovers.
             </p>
-            <div class="hero-buttons">
+            <div class="hero-buttons" >
               <a href="#" class="hero-btn">Order Now</a>
               <a href="#" class="hero-btn-outline">Contact Us</a>
             </div>
@@ -142,11 +144,14 @@
   </section>
 
   <!-- favorites-section -->
-  <section class="favorites-section">
+  <section class="favorites-section" >
     <div class="container">
 
       <h2 class="favorites-title" style="color: #120b07;">Alessis Favorites</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eius quia quae neque rem magni quis recusandae inventore vero quibusdam possimus expedita in repudiandae officiis quam, accusantium voluptate veritatis beatae?</p>
+      <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eius quia quae neque
+        rem magni quis
+        recusandae inventore vero quibusdam possimus expedita in repudiandae officiis quam, accusantium voluptate
+        veritatis beatae?</p>
 
       <div class="favorites-grid">
 
@@ -327,21 +332,21 @@
       <div class="row align-items-center position-relative">
         <!-- LEFT -->
         <div class="col-lg-6">
-          <span class="about-badge"> ☕ About Us </span>
+          <span class="about-badge" data-aos="fade-right"> ☕ About Us </span>
 
-          <h2 class="about-heading">
+          <h2 class="about-heading" data-aos="fade-right">
             Brewing Coffee with a<br />
             Scientific Twist
           </h2>
 
-          <p class="about-text">
+          <p class="about-text" data-aos="zoom-in">
             Alessi Lab is a modern coffeehouse where creativity meets
             craftsmanship. We experiment with flavors, techniques, and ideas
             to create coffee experiences that inspire focus, conversation, and
             innovation.
           </p>
 
-          <ul class="about-points">
+          <ul class="about-points" data-aos="fade-left">
             <li>
               <span class="box"></span>
               <div>
@@ -367,11 +372,11 @@
             </li>
           </ul>
 
-          <a href="#" class="about-btn">Learn More</a>
+          <a href="#" class="about-btn" data-aos="fade-up">Learn More</a>
         </div>
 
         <!-- RIGHT IMAGE -->
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-left">
           <div class="about-image-wrap">
             <img src="./image/about-img.png" alt="Coffee Lab" />
           </div>
@@ -380,15 +385,15 @@
     </div>
 
     <!-- DECOR -->
-    <img src="./image/about-vector.png" class="decor-beans" alt="" />
-    <img src="./image/about-vector2.png" class="decor-cup" alt="" />
+    <img src="./image/about-vector.png" class="decor-beans" data-aos="fade-down" alt="" />
+    <img src="./image/about-vector2.png" class="decor-cup"  alt="" />
   </section>
 
 
 
 
   <!-- The Coffee Herald -->
-  <section class="coffee-herald">
+  <section class="coffee-herald" data-aos="zoom-in">
     <div class="container">
       <!-- HEADER -->
       <div class="text-center herald-header">
@@ -492,7 +497,7 @@
 
       <div class="menu-glass">
         <!-- LEFT -->
-        <div class="menu-col">
+        <div class="menu-col"  data-aos="fade-right">
           <div class="menu-item active">
             <div class="item-left">
               <img src="./image/menu/AmericanoRostedCoffee.png" alt="" />
@@ -529,11 +534,11 @@
 
         <!-- CENTER CUP -->
         <div class="menu-center">
-          <img src="./image/menu/menu-coffee.png" alt="" />
+          <img src="./image/menu/menu-coffee.png"  data-aos="zoom-in" alt="" />
         </div>
 
         <!-- RIGHT -->
-        <div class="menu-col">
+        <div class="menu-col"  data-aos="fade-left">
           <div class="menu-item">
             <div class="item-left">
               <img src="./image/menu/AmericanoRostedCoffee.png" alt="" />
@@ -575,16 +580,16 @@
     </div>
   </section>
   <!-- SIGNATURE SECTION -->
-  <section class="signature-section">
+  <section class="signature-section" >
     <!-- DECOR -->
-    <img src="./image/Signaturecoffee.png" class="decor-left" alt="">
-    <img src="./image/Signaturevector.png" class="decor-right" alt="">
+    <img src="./image/Signaturecoffee.png" class="decor-left"  data-aos="fade-right" alt="">
+    <img src="./image/Signaturevector.png" class="decor-right"  data-aos="fade-left" alt="">
 
-    <div class="container text-center">
-      <h2 class="section-title">Signature Lab Creations</h2>
+    <div class="container text-center"  >
+      <h2 class="section-title" data-aos="fade-down">Signature Lab Creations</h2>
 
       <!-- FILTER TABS -->
-      <div class="menu-tabs">
+      <div class="menu-tabs" data-aos="fade-down">
         <button class="tab active" data-filter="all">Coffee</button>
         <button class="tab" data-filter="cold-brews">Cold Brews</button>
         <button class="tab" data-filter="matcha">Matcha</button>
@@ -592,7 +597,7 @@
       </div>
 
       <!-- PRODUCTS -->
-      <div class="row justify-content-center g-4 mt-5">
+      <div class="row justify-content-center g-4 mt-5" data-aos="zoom-in">
 
         <!-- CARD -->
         <div class="col-lg-4 col-md-6 product-item" data-category="coffee">
@@ -685,74 +690,10 @@
 
     </div>
   </section>
-  <!-- testimonial-section -->
-  <section class="testimonial-section">
-    <div class="testimonial-container">
 
-      <h2 class="testimonial-title">What Client Says</h2>
-
-      <div class="testimonial-divider">
-        <img src="./image/Coffeevector.png" alt="coffee" />
-      </div>
-
-      <p class="testimonial-subtitle">
-        Contrary to popular belief, Lorem Ipsum is not simply random text.
-      </p>
-
-      <!-- Slider -->
-      <div class="testimonial-slider">
-
-        <button class="nav-arrow left">&#10094;</button>
-
-        <!-- SLIDES WRAPPER -->
-        <div class="testimonial-wrapper">
-
-          <!-- ITEM 1 -->
-          <div class="testimonial-content active">
-            <div class="testimonial-img">
-              <img src="./image/Client1.jpg" alt="client" />
-            </div>
-            <p class="testimonial-text">
-              What can I say about coffee? Coffee is coffee. It tastes good,
-              wakes you up, and is less than $10 at most Starbucks.
-            </p>
-            <h4 class="testimonial-name">Hester Perkins</h4>
-          </div>
-
-          <!-- ITEM 2 -->
-          <div class="testimonial-content">
-            <div class="testimonial-img">
-              <img src="./image/Client1.jpg" alt="client" />
-            </div>
-            <p class="testimonial-text">
-              This coffee shop changed my mornings completely. The aroma,
-              the taste, everything feels premium.
-            </p>
-            <h4 class="testimonial-name">Daniel Foster</h4>
-          </div>
-
-          <!-- ITEM 3 -->
-          <div class="testimonial-content">
-            <div class="testimonial-img">
-              <img src="./image/Client1.jpg" alt="client" />
-            </div>
-            <p class="testimonial-text">
-              One cup of their coffee and my productivity doubles.
-              I honestly can’t start my day without it.
-            </p>
-            <h4 class="testimonial-name">Sophia Williams</h4>
-          </div>
-
-        </div>
-
-        <button class="nav-arrow right">&#10095;</button>
-      </div>
-
-    </div>
-  </section>
 
   <!-- GALLERY SECTION -->
-  <section class="sweet-gallery py-5 position-relative overflow-hidden">
+  <section class="sweet-gallery py-5 position-relative overflow-hidden" data-aos="zoom-in">
 
     <div class="container">
 
@@ -928,7 +869,7 @@
 
       <!-- Heading -->
       <div class="text-center mb-5">
-        <h2 class="blog-title">Featured Blog</h2>
+        <h2 class="blog-title" data-aos="fade-up">Featured Blog</h2>
 
         <div class="blog-divider my-3">
 
@@ -947,7 +888,7 @@
 
         <!-- Blog Card 1 -->
         <div class="col-lg-4 col-md-6">
-          <div class="blog-card">
+          <div class="blog-card" data-aos="fade-right">
             <img src="./image/blog/blog1.png" alt="">
             <div class="blog-content">
               <h5>Watch misni sdedn nises</h5>
@@ -970,7 +911,7 @@
 
         <!-- Blog Card 2 -->
         <div class="col-lg-4 col-md-6">
-          <div class="blog-card">
+          <div class="blog-card" data-aos="zoom-in">
             <img src="./image/blog/blog2.png" alt="">
             <div class="blog-content">
               <h5>Watch misni sdedn nises</h5>
@@ -993,7 +934,7 @@
 
         <!-- Blog Card 3 -->
         <div class="col-lg-4 col-md-6">
-          <div class="blog-card">
+          <div class="blog-card" data-aos="fade-left">
             <img src="./image/blog/blog3.png" alt="">
             <div class="blog-content">
               <h5>Watch misni sdedn nises</h5>
@@ -1019,7 +960,7 @@
   </section>
 
   <!-- ===== BENEFITS SECTION ===== -->
-  <section class="benefits-v2">
+  <section class="benefits-v2" data-aos="zoom-in">
     <div class="container">
 
       <h2 class="benefits-title">
@@ -1098,7 +1039,7 @@
       <div class="row align-items-center g-5">
 
         <!-- LEFT : FAQ -->
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-right">
           <div class="al-faq-header">
             <span class="faq-badge">FAQs</span>
             <h2>Frequently Asked Questions</h2>
@@ -1163,7 +1104,7 @@
         </div>
 
         <!-- RIGHT : IMAGE -->
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-left">
           <div class="faq-image-wrapper">
             <img src="./image/coffee-faq.png" alt="Coffee Shop">
             <div class="faq-image-overlay"></div>
@@ -1260,67 +1201,176 @@
     </div>
   </section>
 
-  <!-- REVIEWS SECTION -->
-  <section class="coffee-reviews">
-    <div class="container">
+<!-- REVIEWS SECTION -->
+<section class="coffee-reviews">
+  <div class="container">
 
-      <h2 class="reviews-title">What Clients Say</h2>
-      <p class="reviews-subtitle">Trusted by coffee lovers & brands worldwide</p>
+    <h2 class="reviews-title">What Clients Say</h2>
+    <p class="reviews-subtitle">Trusted by coffee lovers & brands worldwide</p>
 
-      <!-- ROW 1 -->
-      <div class="reviews-row left-to-right ">
-        <div class="reviews-track mt-3">
-          <div class="review-card">
-            <p>“Beautiful UI and smooth performance. The coffee vibe feels premium.”</p>
-            <span>— Liam Brown, Product Manager</span>
+    <!-- ROW 1 -->
+    <div class="reviews-row left-to-right">
+      <div class="reviews-track">
+
+        <!-- ORIGINAL SET -->
+        <div class="review-card">
+          <div class="review-avatar">
+            <img src="./image/Client1.jpg" alt="Sophia Williams">
           </div>
-
-          <div class="review-card">
-            <p>“Menu design is elegant and very easy to navigate.”</p>
-            <span>— Rohit Sharma, Café Owner</span>
-          </div>
-
-          <div class="review-card">
-            <p>“Perfect balance of visuals and usability. Loved the theme.”</p>
-            <span>— Sophia Lee, UI Designer</span>
-          </div>
-
-          <!-- duplicate -->
-          <div class="review-card">
-            <p>“Beautiful UI and smooth performance. The coffee vibe feels premium.”</p>
-            <span>— Liam Brown, Product Manager</span>
-          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            “One cup of their coffee and my productivity doubles.
+            I honestly can’t start my day without it.”
+          </p>
+          <h4 class="review-name">Sophia Williams</h4>
         </div>
-      </div>
 
-      <!-- ROW 2 -->
-      <div class="reviews-row right-to-left">
-        <div class="reviews-track mt-3">
-          <div class="review-card">
-            <p>“The site feels handcrafted, just like a specialty café.”</p>
-            <span>— John Miller, Agency Owner</span>
+        <div class="review-card">
+          <div class="review-avatar">
+            <img src="./image/Client1.jpg" alt="James Miller">
           </div>
-
-          <div class="review-card">
-            <p>“Fast loading, warm colors, and great structure.”</p>
-            <span>— David Martin, Startup Founder</span>
-          </div>
-
-          <div class="review-card">
-            <p>“Customers instantly connect with the coffee story.”</p>
-            <span>— Emma Wilson, Brand Consultant</span>
-          </div>
-
-          <!-- duplicate -->
-          <div class="review-card">
-            <p>“The site feels handcrafted, just like a specialty café.”</p>
-            <span>— John Miller, Agency Owner</span>
-          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            “Smooth, bold, and perfectly balanced.
+            Best coffee experience I’ve had.”
+          </p>
+          <h4 class="review-name">James Miller</h4>
         </div>
-      </div>
 
+        <div class="review-card">
+          <div class="review-avatar">
+            <img src="./image/Client1.jpg" alt="Emma Brown">
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            “The aroma alone is enough to wake you up.
+            Absolutely love it!”
+          </p>
+          <h4 class="review-name">Emma Brown</h4>
+        </div>
+
+        <!-- DUPLICATE SET (EXACT COPY) -->
+        <div class="review-card">
+          <div class="review-avatar">
+            <img src="./image/Client1.jpg" alt="Sophia Williams">
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            “One cup of their coffee and my productivity doubles.
+            I honestly can’t start my day without it.”
+          </p>
+          <h4 class="review-name">Sophia Williams</h4>
+        </div>
+
+        <div class="review-card">
+          <div class="review-avatar">
+            <img src="./image/Client1.jpg" alt="James Miller">
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            “Smooth, bold, and perfectly balanced.
+            Best coffee experience I’ve had.”
+          </p>
+          <h4 class="review-name">James Miller</h4>
+        </div>
+
+        <div class="review-card">
+          <div class="review-avatar">
+            <img src="./image/Client1.jpg" alt="Emma Brown">
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            “The aroma alone is enough to wake you up.
+            Absolutely love it!”
+          </p>
+          <h4 class="review-name">Emma Brown</h4>
+        </div>
+
+      </div>
     </div>
-  </section>
+
+    <!-- ROW 2 -->
+    <div class="reviews-row right-to-left">
+      <div class="reviews-track">
+       <!-- ORIGINAL SET -->
+        <div class="review-card">
+          <div class="review-avatar">
+            <img src="./image/Client1.jpg" alt="Sophia Williams">
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            “One cup of their coffee and my productivity doubles.
+            I honestly can’t start my day without it.”
+          </p>
+          <h4 class="review-name">Sophia Williams</h4>
+        </div>
+
+        <div class="review-card">
+          <div class="review-avatar">
+            <img src="./image/Client1.jpg" alt="James Miller">
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            “Smooth, bold, and perfectly balanced.
+            Best coffee experience I’ve had.”
+          </p>
+          <h4 class="review-name">James Miller</h4>
+        </div>
+
+        <div class="review-card">
+          <div class="review-avatar">
+            <img src="./image/Client1.jpg" alt="Emma Brown">
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            “The aroma alone is enough to wake you up.
+            Absolutely love it!”
+          </p>
+          <h4 class="review-name">Emma Brown</h4>
+        </div>
+
+        <!-- DUPLICATE SET (EXACT COPY) -->
+        <div class="review-card">
+          <div class="review-avatar">
+            <img src="./image/Client1.jpg" alt="Sophia Williams">
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            “One cup of their coffee and my productivity doubles.
+            I honestly can’t start my day without it.”
+          </p>
+          <h4 class="review-name">Sophia Williams</h4>
+        </div>
+
+        <div class="review-card">
+          <div class="review-avatar">
+            <img src="./image/Client1.jpg" alt="James Miller">
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            “Smooth, bold, and perfectly balanced.
+            Best coffee experience I’ve had.”
+          </p>
+          <h4 class="review-name">James Miller</h4>
+        </div>
+
+        <div class="review-card">
+          <div class="review-avatar">
+            <img src="./image/Client1.jpg" alt="Emma Brown">
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            “The aroma alone is enough to wake you up.
+            Absolutely love it!”
+          </p>
+          <h4 class="review-name">Emma Brown</h4>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
 
 
@@ -1575,6 +1625,16 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Add Animation on scroll -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: false
+    });
+  </script>
 </body>
 
 </html>
