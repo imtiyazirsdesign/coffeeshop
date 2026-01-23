@@ -1974,72 +1974,79 @@ body {
   }
 }
 
-/* ================================
-   COFFEE REVIEWS SECTION
-================================ */
+/* SECTION */
 .coffee-reviews {
   padding: 100px 0;
   background: radial-gradient(circle at top, #2b1a12, #120b07 70%);
   overflow: hidden;
-  font-family: "Inter", sans-serif;
 }
 
-/* ===== TITLE ===== */
+/* TITLES */
 .reviews-title {
-  text-align: center;
   font-size: 40px;
   font-weight: 700;
   color: #f5ede4;
-  margin-bottom: 10px;
 }
 
 .reviews-subtitle {
-  text-align: center;
-  font-size: 15px;
   color: #cbb39a;
-  margin-bottom: 70px;
 }
-
-/* ===== ROW ===== */
-.reviews-row {
-  overflow: hidden;
-  margin-bottom: 35px;
-}
-
-/* ===== TRACK ===== */
 .reviews-track {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.track-inner {
+  display: flex;
+  gap: 28px;
+  width: max-content;
+  will-change: transform;
+}
+
+
+/* MARQUEE */
+.reviews-marquee {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* TRACK */
+.reviews-track {
+  width: 100%;
+  overflow: hidden;
+}
+
+.track-inner {
   display: flex;
   gap: 28px;
   width: max-content;
 }
 
-/* ===== CARD ===== */
+/* CARD */
 .review-card {
   width: 260px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.06),
-    rgba(255, 255, 255, 0.02)
-  );
-  border: 1px solid rgba(255, 215, 160, 0.18);
+  padding: 30px;
   border-radius: 18px;
-  padding: 32px 28px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,215,160,0.2);
   text-align: center;
-  color: #f5ede4;
-  transition: all 0.35s ease;
+  color: #fff;
+  transition: 0.3s ease;
+  flex-shrink: 0;
 }
 
 .review-card:hover {
   transform: translateY(-8px);
   border-color: #e0b079;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
-/* ===== AVATAR ===== */
+/* AVATAR */
 .review-avatar {
   width: 80px;
   height: 80px;
-  margin: 0 auto 14px;
+  margin: 0 auto 12px;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid #d7b88c;
@@ -2051,74 +2058,57 @@ body {
   object-fit: cover;
 }
 
-/* ===== STARS ===== */
+/* STARS */
 .review-stars {
-  font-size: 15px;
   color: #e0b079;
-  letter-spacing: 2px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
-/* ===== TEXT ===== */
+/* TEXT */
 .review-text {
-  font-size: 15px;
-  line-height: 1.7;
-  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
-/* ===== NAME ===== */
+/* NAME */
 .review-name {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: #e6d3b3;
 }
 
-/* ================================
-   ANIMATIONS (FIXED)
-================================ */
-.left-to-right .reviews-track {
-  animation: scrollLTR 40s linear infinite;
+/* ANIMATION */
+.track-left .track-inner {
+  animation: reviewsLeft 35s linear infinite;
 }
 
-.right-to-left .reviews-track {
-  animation: scrollRTL 40s linear infinite;
+.track-right .track-inner {
+  animation: reviewsRight 35s linear infinite;
 }
 
-@keyframes scrollLTR {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes scrollRTL {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-/* ===== PAUSE ON HOVER ===== */
-.reviews-row:hover .reviews-track {
+/* PAUSE ON HOVER */
+.reviews-track:hover .track-inner {
   animation-play-state: paused;
 }
 
-/* ================================
-   RESPONSIVE
-================================ */
+/* KEYFRAMES */
+@keyframes reviewsLeft {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes reviewsRight {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
   .review-card {
     width: 280px;
   }
-
-  .reviews-title {
-    font-size: 32px;
-  }
 }
+
 
 
 /* ================= NEWSLETTER ================= */
